@@ -28,6 +28,29 @@
   color: #61dafb;
 }
 
+.app-text {
+  margin: 0 4rem;
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+  background-color: aqua;
+  font-size: 2rem;
+  font-family: "Dancing Script";
+
+}
+
+a{
+  text-decoration: none;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
