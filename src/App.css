@@ -1,3 +1,8 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -42,14 +47,42 @@ ul {
   justify-content: center;
   gap: 8rem;
   background-color: aqua;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: "Dancing Script";
 
 }
 
-a{
-  text-decoration: none;
+ul li{
+  display: inline-block;
+  position: relative;
 }
+
+ul li a{
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+ul li ul.dropdown li{
+  display: block;
+}
+
+ul li ul.dropdown{
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+ul li a:hover{
+  background-color: blue;
+}
+
+ul li:hover ul.dropdown{
+  display: block;
+  
+}
+
 
 @keyframes App-logo-spin {
   from {
